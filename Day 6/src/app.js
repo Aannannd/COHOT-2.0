@@ -24,4 +24,12 @@ app.post("/notes",async (req,res)=>{
     })
 })
 
+app.get("/notes",async (req,res)=>{
+    const notes = await noteModel.find() // noteModel ke andar jo bhi notes h unko find karke notes variable m store krdia
+    res.status(200).json({               // find meathod hamesha array of objects return krta h , agar koi note nhi h to empty array return krta h
+            message : "notes fetched successfully",
+            notes
+        })
+})
+
 module.exports=app
