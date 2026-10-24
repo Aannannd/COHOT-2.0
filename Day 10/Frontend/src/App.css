@@ -1,10 +1,79 @@
-*{
-    margin:0%;
-    padding:0%;
-    box-sizing: border-box; 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html,body{
-    height: 100%;
-    width: 100%;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+  color: #222;
+}
+
+.note-create-form {
+  width: 90%;
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.note-create-form input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+}
+
+.note-create-form input:focus {
+  border-color: #4f46e5;
+}
+
+.note-create-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #4f46e5;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.note-create-form button:hover {
+  background-color: #3730a3;
+}
+
+.notes {
+  width: 90%;
+  max-width: 1000px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.note {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  overflow-wrap: anywhere;
+}
+
+.note h1 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #4f46e5;
+}
+
+.note p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
 }
