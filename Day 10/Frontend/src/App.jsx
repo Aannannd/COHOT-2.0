@@ -17,7 +17,7 @@ function App() {
 
   // ye useEffect hook hai jisme humne fetchData function ko call kiya hai taki component render hone ke baad data fetch ho jaye
 
-  ueseEffct(() => {
+  useEffect(() => {
     fetchData();
   }, []);
 
